@@ -2,6 +2,7 @@
 background-color: rgba(206, 144, 9, 0.945);
 text-align: center;
 color: rgb(224, 248, 86);
+border-radius: 15px;
 }
 
 .calcarea {
@@ -15,6 +16,7 @@ color: rgb(224, 248, 86);
   align-content: center;
   justify-content: space-around;
   background-color: rgba(68, 19, 124, 0.836);
+  border-radius: 15px;
 }
 
 .internal_form {
@@ -44,19 +46,26 @@ color: rgb(224, 248, 86);
   padding-bottom: 20px;
 }
 .plan {
+  margin-right: 3px;
   background-color: rgb(253, 208, 57);
   color: rgb(113, 59, 129);
+  border-radius: 15px;
 }
 
 .noplan{
+  margin-left: 3px;
   background-color: hsla(252, 62%, 84%, 0.774);
   color: rgb(124, 118, 118);
+  border-radius: 15px;
 }
 
 #btncalc {
   background-color: rgb(253, 208, 57);
   border-color:rgba(206, 186, 9, 0.945);
   font-size: 20px;
+  font-weight: bold;
+  color: rgb(113, 59, 129);
+  border-radius: 8px;
 }
 
 #topo {
@@ -65,5 +74,6 @@ color: rgb(224, 248, 86);
 }
 
 label {
-padding-right: 4px;
+padding-right: 1px;
+font-size: 20px;
 }

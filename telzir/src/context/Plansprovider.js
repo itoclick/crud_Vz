@@ -6,8 +6,8 @@ import PropTypes from 'prop-types';
 
 function PlansProvider({ children }) {
   const [data, setdata ]= useState(require('./Informations.json'));
-  const [withPlan, setwithPlan] = useState(0.0);
-  const [noPlan, setnoPlan] = useState(0.0);
+  const [withPlan, setwithPlan] = useState(0);
+  const [noPlan, setnoPlan] = useState(0);
   const [posibleDestin, setPosibleDestin] = useState({});
   const [chPlan, setchPlan] = useState('');
   const [minuts, setMinuts] = useState(0);
@@ -40,10 +40,8 @@ function PlansProvider({ children }) {
 }
 
 PlansProvider.propTypes = {
-  children: PropTypes.arrayOf([
-    PropTypes.arrayOf(PropTypes.node),
-    ]).isRequired
-};
+  children: PropTypes.node.isRequired,
+}
    
 
 export default PlansProvider;
