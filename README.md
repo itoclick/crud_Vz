@@ -1,5 +1,7 @@
 # Projeto Telzir
-O projeto é um CRUD. para avaliação do candidato Uilton Rocha.
+______
+
+- O projeto é um CRUD. para avaliação do candidato Uilton Rocha.
 LiveCode está em:
 Repositório: <https://github.com/itoclick/crud_Vizir> 
 
