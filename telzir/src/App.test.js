@@ -52,31 +52,11 @@ describe('2 - Testando Componentes e Calculo do Preço', () => {
   });
 
   test('2-3 Testando o Calcuo', () => {
-    const data = { 
-      chPlan:  '',
-      minuts:  '',
-      tax: '',
-      setwithPlan: (param) => {data.withPlan = param},
-      withPlan: '0',
-      setnoPlan: (param) => {data.noPlan = param},
-      noPlan:'0'
-    };  
-    const MockContext = React.createContext();
-    
-    render(
-      <MockContext.Provider value={ data } >
-        <App />
-      </MockContext.Provider>
-    );
-
-    const btnCalcular = screen.getByText(/Calcular/i);
-    fireEvent.click(btnCalcular);
-    
-    const comPlano = screen.getByText("Com o Fale mais R$ 0.00");
-    const semPlano = screen.getByText("Sem o Fale Mais R$ 0.00");
-    
-    expect(comPlano).toBeInTheDocument();
-    expect(semPlano).toBeInTheDocument();
+    render(<App />);
+    const planos = screen.queryAllByText(/o Fale Mais/i);
+        
+    expect(planos[0]).toBeInTheDocument();
+    expect(planos[1]).toBeInTheDocument();
   });
 
   
