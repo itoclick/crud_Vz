@@ -6,7 +6,7 @@ LiveCode está em:
 Repositório: <https://github.com/itoclick/crud_Vizir> 
 
 
-- Executando o projeto
+- Executando o projeto  
   No diretório raiz do projeto execute:   npm i  
   depois:  npm start  
   
