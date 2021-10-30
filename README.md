@@ -3,7 +3,7 @@ ______
 
 - O projeto é um CRUD. para avaliação do candidato Uilton Rocha.  
 LiveCode está em:   
-Repositório: <https://github.com/itoclick/crud_Vizir> 
+Repositório: <https://github.com/itoclick/crud_Vz> 
 
 
 - Executando o projeto  
